@@ -3,140 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Edmilson Bittencourt - Portfólio de Projetos</title>
+<title>Edmilson Bittencourt - Portfólio</title>
 <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', sans-serif;scroll-behavior:smooth;}
-    body{color:#1a1a1a; overflow-x:hidden;}
-    #video-bg {position: fixed;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;z-index: -2;}
-.overlay {position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 74, 153, 0.25);z-index: -1;}
-    header{text-align: center;padding: 80px 20px 40px 20px;background: linear-gradient(to bottom, rgba(255,255,255,0.2), transparent);}
-    header h1{font-size: 3rem;color: #fff;text-shadow: 0 2px 15px rgba(0,0,0,0.7);}
-    header p{font-size: 1.2rem;color: #fff;font-weight: 600;text-shadow: 0 2px 10px rgba(0,0,0,0.7);}
-.sobre,.projetos,.contato{max-width: 1100px;margin: 60px auto;padding: 40px 20px;text-align: center;background: rgba(0,0,0,0.4);border-radius: 20px;backdrop-filter: blur(8px);box-shadow: 0 8px 30px rgba(0,0,0,0.3);color: #fff;}
-.sobre h2,.projetos h2,.contato h2{color: #fff; font-size: 2.2rem; margin-bottom: 20px;text-shadow: 0 2px 10px rgba(0,0,0,0.5);}
-.sobre p{color: #eee; line-height: 1.7;}
-.grid-projetos{display: grid;grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));gap: 30px;margin-top: 30px;}
-.card-projeto{background: rgba(0,0,0,0.35);border-radius: 20px;overflow: hidden;box-shadow: 0 8px 25px rgba(0,0,0,0.4);transition: 0.3s;border: 1px solid rgba(255,255,255,0.15);backdrop-filter: blur(10px);text-align: left;}
-.card-projeto:hover{transform: translateY(-10px);box-shadow: 0 15px 40px rgba(0,0,0,0.5);}
-
-.card-projeto img{
-    width: 100%;
-    height: 200px; /* quadrado fixo */
-    object-fit: cover; /* PREENCHE E CORTA */
-    display: block;
-}
-
-.card-conteudo{padding: 20px;}
-.card-projeto h3{color: #fff; font-size: 1.5rem; margin-bottom: 10px;}
-.card-projeto p{color: #ddd; margin-bottom: 20px; min-height: 60px;}
-.btn-projeto{display: inline-block;padding: 10px 20px;background: #007BFF;color: #fff;text-decoration: none;border-radius: 25px;font-weight: bold;font-size: 0.9rem;transition: 0.3s;}
-.btn-projeto:hover{background: #004a99; transform: scale(1.05);}
-.loading{text-align: center; padding: 40px; font-size: 1.2rem; color: #fff;}
-.botoes-contato{display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top:20px;}
-.btn-contato{padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 1rem; transition: 0.3s; color:#fff; display: flex; align-items: center; gap: 8px;} /* FLEX PRA ICONE */
-.btn-contato svg{width: 20px; height: 20px;}
-.btn-whats{background: #25D366;}
-.btn-insta{background: linear-gradient(45deg, #f09433, #e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);}
-.btn-contato:hover{transform: scale(1.05);}
-    footer{text-align: center; padding: 20px; background: rgba(0,0,0,0.3); color: #ddd; font-weight: 500; backdrop-filter: blur(5px);}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', sans-serif;}
+body{color:#fff; overflow-x:hidden; background:#000;}
+#video-bg{position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-2;}
+.overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:-1;}
+header{text-align:center;padding:80px 20px;}
+header h1{font-size:3rem; text-shadow:0 2px 15px rgba(0,0,0,0.7);}
+.sobre,.projetos,.contato{max-width:1100px;margin:40px auto;padding:30px 20px;text-align:center;background:rgba(0,0,0,0.4);border-radius:20px;backdrop-filter:blur(8px);}
+.grid-projetos{display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:30px;margin-top:30px;}
+.card-projeto{background:rgba(0,0,0,0.5);border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,0.15); text-align:left;}
+.card-projeto img{width:100%;height:200px;object-fit:cover;display:block;background:#222;}
+.card-conteudo{padding:20px;}
+.card-conteudo h3{font-size:1.5rem; margin-bottom:10px;}
+.card-conteudo p{color:#ddd; margin-bottom:20px; min-height:60px;}
+.btn-projeto{display:inline-block;padding:10px 20px;background:#007BFF;color:#fff;text-decoration:none;border-radius:25px;font-weight:bold;}
+.botoes-contato{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:20px;}
+.btn-contato{padding:12px 24px;border-radius:25px;text-decoration:none;font-weight:bold;color:#fff;}
+.btn-whats{background:#25D366;}.btn-insta{background:#E1306C;}
+footer{text-align:center;padding:20px;color:#ddd;}
 </style>
 </head>
 <body>
-
 <video autoplay muted loop playsinline id="video-bg"><source src="mar.mp4" type="video/mp4"></video>
 <div class="overlay"></div>
-
 <header><h1>Edmilson Bittencourt</h1><p>Desenvolvedor de Projetos Digitais</p></header>
-
-<section class="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Eu crio sites e soluções digitais que vendem de verdade. Meu foco é transformar ideias em páginas profissionais, rápidas e bonitas que geram resultado pra seu comércio.</p>
-</section>
-
-<section class="projetos"><h2>Meus Projetos</h2><div class="grid-projetos" id="lista-projetos"><div class="loading">Carregando projetos...</div></div></section>
-
+<section class="projetos"><h2>Meus Projetos</h2><div class="grid-projetos" id="lista-projetos"><p>Carregando projetos...</p></div></section>
 <section class="contato">
     <h2>Vamos criar seu projeto?</h2>
     <div class="botoes-contato">
-        <a href="https://wa.me/55SEUNUMERO" target="_blank" class="btn-contato btn-whats">
-            <svg viewBox="0 0 32 32" fill="white"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.666.736 5.162 2.015 7.29L2 30l6.89-1.806A14.005 14.005 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.714c-2.274 0-4.474-.61-6.41-1.765l-.46-.275-4.086 1.07 1.093-3.975-.3-.484A11.432 11.432 0 0 1 4.286 16c0-6.45 5.264-11.714 11.714-11.714S27.714 9.55 27.714 16 22.45 27.714 16 27.714zm6.5-8.688c-.356-.178-2.1-1.036-2.425-1.154-.325-.118-.562-.178-.8.178-.237.356-.92 1.154-1.128 1.39-.208.237-.416.267-.772.089-.356-.178-1.5-.553-2.858-1.764-1.057-.942-1.77-2.107-1.978-2.463-.208-.356-.022-.55.156-.727.16-.16.356-.416.534-.623.178-.208.237-.356.356-.593.118-.237.06-.444-.03-.623-.09-.178-.8-1.926-1.095-2.64-.288-.692-.58-.597-.8-.608-.208-.01-.447-.01-.687-.01-.237 0-.623.089-.95.444-.325.356-1.243 1.215-1.243 2.965s1.273 3.44 1.45 3.68c.178.237 2.506 3.826 6.07 5.37.85.367 1.513.587 2.03.75.853.27 1.63.232 2.244.14.685-.102 2.1-.858 2.396-1.687.296-.828.296-1.538.207-1.687-.09-.148-.325-.237-.68-.415z"/></svg>
-            WhatsApp
-        </a>
-        <a href="https://instagram.com/SEUINSTA" target="_blank" class="btn-contato btn-insta">
-            <svg viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            Instagram
-        </a>
+        <a href="https://wa.me/5551985108885?text=Ol%C3%A1%20Edmilson%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" class="btn-contato btn-whats">WhatsApp</a>
+        <a href="https://instagram.com/edmilsonbittencourt" target="_blank" class="btn-contato btn-insta">Instagram</a>
     </div>
 </section>
-
-<footer><p>© 2026 Edmilson Bittencourt. Todos os direitos reservados.</p></footer>
-
+<footer><p>© 2026 Edmilson Bittencourt</p></footer>
 <script>
 const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRdrODbSUGBAJEGawcIqzyRLGA-P60A1nPnMJH9OTT-MRIuANdilj3rL-mrbslWppKpFG0OTZAa7KtV/pub?output=csv";
 
-function converterLinkDrive(link) {
+function driveToImg(link){
   if(!link) return "";
-  link = link.replace(/"/g, '').trim();
-  const match = link.match(/\/d\/([a-zA-Z0-9-_]+)/);
-  if (match && match[1]) return `https://drive.google.com/thumbnail?id=${match[1]}&sz=w1000`;
-  return link;
+  let id="";
+  link=link.trim();
+  if(link.includes("id=")) id=link.split("id=")[1].split("&")[0].split("/")[0];
+  else { let m=link.match(/\/d\/([a-zA-Z0-9-_]+)/); if(m) id=m[1]; }
+  return id? `https://drive.google.com/thumbnail?id=${id}&sz=w1000` : link;
 }
 
-function parseCSV(text) {
-  const rows = [];
-  let row = [], cell = '', inQuotes = false;
-  for (let i = 0; i < text.length; i++) {
-    const char = text[i], next = text[i+1];
-    if (char === '"') {
-      if (inQuotes && next === '"') { cell += '"'; i++; }
-      else { inQuotes =!inQuotes; }
-    } else if (char === ',' &&!inQuotes) {
-      row.push(cell); cell = '';
-    } else if ((char === '\n' || char === '\r') &&!inQuotes) {
-      if (cell!== '' || row.length > 0) { row.push(cell); rows.push(row); row = []; cell = ''; }
-      if (char === '\r' && next === '\n') i++;
-    } else { cell += char; }
-  }
-  if (cell!== '' || row.length > 0) { row.push(cell); rows.push(row); }
-  const headers = rows[0];
-  return rows.slice(1).map(r => Object.fromEntries(headers.map((h, i) => [h.trim(), r[i]?.trim() || ''])));
+async function carregar(){
+  try{
+    const r = await fetch(CSV_URL);
+    const txt = await r.text();
+    // separa por linha e pega tudo, sem validar nome de coluna
+    const linhas = txt.split("\n").filter(l=>l.trim()!=="");
+    // remove cabeçalho
+    linhas.shift();
+    const container = document.getElementById("lista-projetos");
+    container.innerHTML="";
+    linhas.forEach(linha=>{
+      // divide por vírgula, mas respeita aspas
+      const cols = linha.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(c=>c.replace(/^"|"$/g,"").trim());
+      if(cols.length < 2 ||!cols[0]) return;
+      const nome = cols[0];
+      const desc = cols[1] || "";
+      const imgRaw = cols[2] || "";
+      const link = cols[3] || "#";
+      const img = driveToImg(imgRaw);
+      container.innerHTML += `
+        <div class="card-projeto">
+          <img src="${img}" onerror="this.src='https://via.placeholder.com/400x200?text=${encodeURIComponent(nome)}'">
+          <div class="card-conteudo"><h3>${nome}</h3><p>${desc}</p><a href="${link}" target="_blank" class="btn-projeto">Ver Site Ao Vivo</a></div>
+        </div>`;
+    });
+    if(container.innerHTML==="") container.innerHTML="<p>Nada na planilha. Confere se publicou como CSV.</p>";
+  }catch(e){ document.getElementById("lista-projetos").innerHTML="<p>Erro ao carregar planilha. Tem que estar em Publicar na Web.</p>"; }
 }
-
-async function carregarProjetos() {
-    try {
-        const res = await fetch(CSV_URL);
-        const data = await res.text();
-        const dados = parseCSV(data).filter(p => p['Projeto']);
-
-        const container = document.getElementById('lista-projetos');
-        container.innerHTML = '';
-
-        dados.forEach(projeto => {
-            const imagem = converterLinkDrive(projeto['Imagem Capa']);
-
-            const card = `
-                <div class="card-projeto">
-                    <img src="${imagem || `https://via.placeholder.com/400x200/007BFF/FFFFFF?text=${encodeURIComponent(projeto['Projeto'])}`}" alt="${projeto['Projeto']}" onerror="this.src='https://via.placeholder.com/400x200/FF0000/FFFFFF?text=Erro+Imagem'">
-                    <div class="card-conteudo">
-                        <h3>${projeto['Projeto']}</h3>
-                        <p>${projeto['Descricao']}</p>
-                        <a href="${projeto['Link Site']}" target="_blank" class="btn-projeto">Ver Site Ao Vivo</a>
-                    </div>
-                </div>
-            `;
-            container.innerHTML += card;
-        });
-
-        if(container.innerHTML === '') container.innerHTML = '<p>Nenhum projeto encontrado.</p>'
-
-    } catch (erro) {
-        document.getElementById('lista-projetos').innerHTML = '<p>Erro ao carregar. Verifica se a planilha está publicada como CSV.</p>';
-        console.error(erro);
-    }
-}
-
-carregarProjetos();
+carregar();
 </script>
-
 </body>
 </html>
