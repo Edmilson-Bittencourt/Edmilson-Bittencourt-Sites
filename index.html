@@ -8,26 +8,25 @@
     *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', sans-serif;scroll-behavior:smooth;}
     body{color:#1a1a1a; overflow-x:hidden; background:#000;}
     #video-bg {position: fixed;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;z-index: -2;}
-   .overlay {position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0,0, 0.6);z-index: -1;}
+  .overlay {position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0, 0,0, 0.6);z-index: -1;}
     header{text-align: center;padding: 80px 20px 40px 20px;}
     header h1{font-size: 3rem;color: #fff;text-shadow: 0 2px 15px rgba(0,0,0,0.7);}
     header p{font-size: 1.2rem;color: #fff;font-weight: 600;text-shadow: 0 2px 10px rgba(0,0,0,0.7);}
-   .sobre,.projetos,.contato{max-width: 1100px;margin: 60px auto;padding: 40px 20px;text-align: center;background: rgba(0,0,0,0.4);border-radius: 20px;backdrop-filter: blur(8px);box-shadow: 0 8px 30px rgba(0,0,0,0.3);color: #fff;}
-   .sobre h2,.projetos h2,.contato h2{color: #fff; font-size: 2.2rem; margin-bottom: 20px;}
-   .sobre p{color: #eee; line-height: 1.7;}
-   .grid-projetos{display: grid;grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));gap: 30px;margin-top: 30px;}
-   .card-projeto{background: rgba(0,0,0,0.5);border-radius: 20px;overflow: hidden;box-shadow: 0 8px 25px rgba(0,0,0,0.4);transition: 0.3s;border: 1px solid rgba(255,255,255,0.15);backdrop-filter: blur(10px);text-align: left;}
-   .card-projeto:hover{transform: translateY(-10px);}
-   .card-projeto img{width: 100%;height: 200px;object-fit: cover;display: block;background:#222;}
-   .card-conteudo{padding: 20px;}
-   .card-projeto h3{color: #fff; font-size: 1.5rem; margin-bottom: 10px;}
-   .card-projeto p{color: #ddd; margin-bottom: 20px; min-height: 60px;}
-   .btn-projeto{display: inline-block;padding: 10px 20px;background: #007BFF;color: #fff;text-decoration: none;border-radius: 25px;font-weight: bold;font-size: 0.9rem;}
-   .btn-projeto:hover{background: #004a99;}
-   .botoes-contato{display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top:20px;}
-   .btn-contato{padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 1rem; color:#fff; display:flex; align-items:center; gap:8px;}
-   .btn-whats{background: #25D366;}
-   .btn-insta{background: linear-gradient(45deg, #f09433, #e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);}
+  .sobre,.projetos,.contato{max-width: 1100px;margin: 60px auto;padding: 40px 20px;text-align: center;background: rgba(0,0,0,0.4);border-radius: 20px;backdrop-filter: blur(8px);box-shadow: 0 8px 30px rgba(0,0,0,0.3);color: #fff;}
+  .sobre h2,.projetos h2,.contato h2{color: #fff; font-size: 2.2rem; margin-bottom: 20px;}
+  .sobre p{color: #eee; line-height: 1.7;}
+  .grid-projetos{display: grid;grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));gap: 30px;margin-top: 30px;}
+  .card-projeto{background: rgba(0,0,0,0.5);border-radius: 20px;overflow: hidden;box-shadow: 0 8px 25px rgba(0,0,0,0.4);transition: 0.3s;border: 1px solid rgba(255,255,255,0.15);backdrop-filter: blur(10px);text-align: left;}
+  .card-projeto:hover{transform: translateY(-10px);}
+  .card-projeto img{width: 100%;height: 200px;object-fit: cover;display: block;background:#222;}
+  .card-conteudo{padding: 20px;}
+  .card-projeto h3{color: #fff; font-size: 1.5rem; margin-bottom: 10px;}
+  .card-projeto p{color: #ddd; margin-bottom: 20px; min-height: 60px;}
+  .btn-projeto{display: inline-block;padding: 10px 20px;background: #007BFF;color: #fff;text-decoration: none;border-radius: 25px;font-weight: bold;font-size: 0.9rem;}
+  .btn-projeto:hover{background: #004a99;}
+  .botoes-contato{display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top:20px;}
+  .btn-contato{padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 1rem; color:#fff; display:flex; align-items:center; gap:8px;}
+  .btn-whats{background: #25D366;}
     footer{text-align: center; padding: 20px; background: rgba(0,0,0,0.3); color: #ddd; backdrop-filter: blur(5px);}
 </style>
 </head>
@@ -35,18 +34,21 @@
 <video autoplay muted loop playsinline id="video-bg"><source src="mar.mp4" type="video/mp4"></video>
 <div class="overlay"></div>
 <header><h1>Edmilson Bittencourt</h1><p>Desenvolvedor de Projetos Digitais</p></header>
+
+<section class="projetos"><h2>Meus Projetos</h2><div class="grid-projetos" id="lista-projetos"><p>Carregando projetos...</p></div></section>
+
 <section class="sobre">
     <h2>Sobre Mim</h2>
     <p>Eu crio sites e soluções digitais que vendem de verdade. Meu foco é transformar ideias em páginas profissionais, rápidas e bonitas que geram resultado pra seu comércio.</p>
 </section>
-<section class="projetos"><h2>Meus Projetos</h2><div class="grid-projetos" id="lista-projetos"><p>Carregando projetos...</p></div></section>
+
 <section class="contato">
     <h2>Vamos criar seu projeto?</h2>
     <div class="botoes-contato">
         <a href="https://wa.me/5551985108885?text=Ol%C3%A1%20Edmilson%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" class="btn-contato btn-whats">WhatsApp</a>
-        <a href="https://instagram.com/edmilsonbittencourt" target="_blank" class="btn-contato btn-insta">Instagram</a>
     </div>
 </section>
+
 <footer><p>© 2026 Edmilson Bittencourt. Todos os direitos reservados.</p></footer>
 
 <script>
@@ -82,7 +84,6 @@ async function carregar(){
     const linhas = parseCSV(txt);
     const header = linhas.shift().map(h=>h.toLowerCase().trim());
 
-    // acha onde está cada coluna, não importa a ordem
     let idxNome = header.findIndex(h=>h.includes("projeto"));
     let idxDesc = header.findIndex(h=>h.includes("desc"));
     let idxImg = header.findIndex(h=>h.includes("imagem") || h.includes("capa") || h.includes("foto"));
